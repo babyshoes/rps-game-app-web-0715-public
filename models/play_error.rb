@@ -1,0 +1,2 @@
+class PlayTypeError < StandardError
+end

@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 
 describe RPSGame do
   describe "#new" do
@@ -44,7 +45,6 @@ describe RPSGame do
     it "should return true if the player won" do
       game = RPSGame.new(:rock)
       allow(game).to receive(:computer_play) { :scissors }
-
       expect(game.won?).to eq(true)
     end
 
